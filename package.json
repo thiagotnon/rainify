@@ -20,7 +20,7 @@
     "lint": "eslint . --ext ts,tsx",
     "lint:fix": "eslint . --ext ts,tsx --fix",
     "prepublishOnly": "git diff-index --quiet HEAD -- || (echo 'Commit suas mudanças antes de publicar' && exit 1)",
-    "release": "npm version patch && git push --follow-tags && npm run publish"
+    "release": "npm version patch && git push --follow-tags && npm publish"
   },
   "dependencies": {
     "react": "^18.3.1",
