@@ -1,7 +1,7 @@
 {
   "name": "rainify",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "files": [
     "dist"
@@ -41,5 +41,14 @@
     "typescript-eslint": "^8.0.0",
     "vite": "^5.4.0",
     "vite-plugin-dts": "^4.0.1"
-  }
+  },
+  "license": "MIT",
+  "keywords": [
+    "rain",
+    "effects",
+    "web",
+    "react",
+    "library"
+  ],
+  "author": "thiagotnon"
 }
