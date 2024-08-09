@@ -1,6 +1,6 @@
-# ranify
+# Ranify 🌧️
 
-**ranify** is a library for creating customizable rain effects for React projects.
+**Ranify** is a library for creating customizable rain effects for React projects.
 
 ## Installation
 
