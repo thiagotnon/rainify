@@ -4,7 +4,8 @@
   "version": "0.0.6",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "module": "./dist/main.js",
   "exports": "./dist/main.js",
