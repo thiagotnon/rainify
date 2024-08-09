@@ -19,8 +19,7 @@
     "preview": "vite preview",
     "lint": "eslint . --ext ts,tsx",
     "lint:fix": "eslint . --ext ts,tsx --fix",
-    "prepublishOnly": "git diff-index --quiet HEAD -- || (echo 'Commit suas mudanças antes de publicar' && exit 1)",
-    "release": "npm version patch && git push --follow-tags && npm publish"
+    "release": "release-it"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -37,6 +36,7 @@
     "eslint-plugin-react-refresh": "^0.4.9",
     "glob": "^11.0.0",
     "globals": "^15.9.0",
+    "release-it": "^17.6.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.0",
     "vite": "^5.4.0",
@@ -58,5 +58,11 @@
   "bugs": {
     "url": "https://github.com/thiagotnon/rainify/issues"
   },
-  "homepage": "https://github.com/thiagotnon/rainify#readme"
+  "homepage": "https://github.com/thiagotnon/rainify#readme",
+  "release-it": {
+    "$schema": "https://unpkg.com/release-it/schema/release-it.json",
+    "github": {
+      "release": true
+    }
+  }
 }
