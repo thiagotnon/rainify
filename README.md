@@ -29,10 +29,9 @@ import { Ranify } from 'ranify'
 2. Use the Component in Your Project
 
 ```tsx
-import React from 'react'
 import { Ranify } from 'ranify'
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <div>
       <Ranify
@@ -83,6 +82,6 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 If you have any questions or suggestions, please contact us at: thiagotnon@gmail.com.
 
-Thank you for using [ranify](https://github.com/thiagotnon/rainify.git)! We hope you enjoy the rain effect in your projects.
+Thank you for using [ranify](https://github.com/thiagotnon/rainify.git)! I hope you enjoy the rain effect in your projects.
 
 Made with 💜 by [thiagotnon](https://github.com/thiagotnon).
