@@ -52,11 +52,13 @@ export default App
 
 #### Component Properties
 
-- **'intensity'** (number): Controls the intensity of the rain. Values between 0 and 1.
-- **'speed'** (number): Controls the speed of the rain. Positive values.
-- **'direction'** (object): Defines the wind direction with x and y properties.
-- **'color'** (string): Defines the color of the raindrops. Example: "rgba(255, 255, 255, 0.8)".
-- **'thickness'** (number): Defines the thickness of the raindrops. Positive values.
+| **Props** | **Types**                                                                        |
+| --------- | -------------------------------------------------------------------------------- |
+| intensity | Number: controls the intensity of the rain. Values between 0 and 1.              |
+| speed     | Number: controls the speed of the rain. Positive values.                         |
+| direction | Object: defines the wind direction with x and y properties.                      |
+| color     | String: defines the color of the raindrops. Example: "rgba(255, 255, 255, 0.8)". |
+| thickness | Number: defines the thickness of the raindrops. Positive values.                 |
 
 ### Configuration Example
 
