@@ -8,6 +8,7 @@ interface RainifyProps {
   speed?: number
   wind?: number
   thickness?: number
+  isEnabled?: boolean
 }
 
 interface Raindrop {
@@ -21,15 +22,18 @@ interface Raindrop {
 export function Rainify({
   className,
   intensity = 50,
-  color = 'rgb(128,128,128, .5)',
+  color = 'rgba(128, 128, 128, 0.5)',
   zIndex = 0,
   speed = 1,
   wind = 0,
   thickness = 1,
+  isEnabled = true, // Valor padrão como verdadeiro
 }: RainifyProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
+    if (!isEnabled) return // Retorna se o efeito estiver desativado
+
     const canvas = canvasRef.current
     if (!canvas) return
 
@@ -93,7 +97,7 @@ export function Rainify({
     return () => {
       window.removeEventListener('resize', handleResize)
     }
-  }, [intensity, color, speed, wind, thickness])
+  }, [intensity, color, speed, wind, thickness, isEnabled])
 
   return (
     <canvas
