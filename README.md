@@ -52,15 +52,15 @@ export default App
 
 #### Component Properties
 
-| Prop      | Type    | Default                      | Description                                                                                                       |
-| --------- | ------- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| intensity | number  | `50`                         | Controls the intensity of the rain.                                                                               |
-| speed     | number  | `1`                          | Sets the speed of the raindrops.                                                                                  |
-| wind      | number  | `0`                          | or {x: number, y: number} Defines the wind direction. Can be a single value or an object with x and y components. |
-| color     | string  | `"rgba(128, 128, 128, 0.5)"` | Specifies the color of the raindrops. Example: "rgba(255, 255, 255, 0.8)".                                        |
-| thickness | number  | `1`                          | Defines the thickness of the raindrops.                                                                           |
-| isEnabled | boolean | `true`                       | Enables or disables the rain effect.                                                                              |
-| className | string  | `''`                         | Applies a custom CSS class to the canvas element.                                                                 |
+| Prop      | Type    | Default                      | Description                                                                |
+| --------- | ------- | ---------------------------- | -------------------------------------------------------------------------- |
+| intensity | number  | `50`                         | Controls the intensity of the rain.                                        |
+| speed     | number  | `1`                          | Sets the speed of the raindrops.                                           |
+| wind      | number  | `0`                          | Defines the wind direction.                                                |
+| color     | string  | `"rgba(128, 128, 128, 0.5)"` | Specifies the color of the raindrops. Example: "rgba(255, 255, 255, 0.8)". |
+| thickness | number  | `1`                          | Defines the thickness of the raindrops.                                    |
+| isEnabled | boolean | `true`                       | Enables or disables the rain effect.                                       |
+| className | string  | `''`                         | Applies a custom CSS class to the canvas element                           |
 
 ### Configuration Example
 
