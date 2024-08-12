@@ -37,9 +37,10 @@ const App = () => {
       <Rainify
         intensity={0.5}
         speed={3}
-        direction={{ x: 0, y: 1 }}
+        wind={0}
         color='rgba(255, 255, 255, 0.8)'
         thickness={2}
+        isEnabled
       />
     </div>
   )
@@ -68,9 +69,10 @@ export default App
 <Rainify
   intensity={0.7}
   speed={5}
-  direction={{ x: 1, y: 0.5 }}
+  wind={0}
   color='rgba(0, 0, 255, 0.6)'
   thickness={3}
+  isEnabled
   className='my-custom-class'
 />
 ```
