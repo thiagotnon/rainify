@@ -40,7 +40,7 @@ const App = () => {
         wind={0}
         color='rgba(255, 255, 255, 0.8)'
         thickness={2}
-        isEnabled
+        isRaining
       />
     </div>
   )
@@ -60,7 +60,7 @@ export default App
 | wind      | number  | `0`                          | Defines the wind direction.                                                |
 | color     | string  | `"rgba(128, 128, 128, 0.5)"` | Specifies the color of the raindrops. Example: "rgba(255, 255, 255, 0.8)". |
 | thickness | number  | `1`                          | Defines the thickness of the raindrops.                                    |
-| isEnabled | boolean | `true`                       | Enables or disables the rain effect.                                       |
+| isRaining | boolean | `true`                       | Enables or disables the rain effect.                                       |
 | className | string  | `''`                         | Applies a custom CSS class to the canvas element                           |
 
 ### Configuration Example
@@ -72,7 +72,7 @@ export default App
   wind={0}
   color='rgba(0, 0, 255, 0.6)'
   thickness={3}
-  isEnabled
+  isRaining
   className='my-custom-class'
 />
 ```
