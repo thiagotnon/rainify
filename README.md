@@ -43,7 +43,7 @@ const App = () => {
         intensity={1000}
         color='rgba(255, 255, 255, 0.5)'
         zIndex={0}
-        speed={0.1}
+        speed={10}
         wind={10}
         thickness={1}
         splashColor='rgba(255, 255, 255, 0.5)'
@@ -87,7 +87,7 @@ export default App
   intensity={1000}
   color='rgba(255, 255, 255, 0.5)'
   zIndex={0}
-  speed={0.1}
+  speed={10}
   wind={10}
   thickness={1}
   splashColor='rgba(255, 255, 255, 0.5)'
