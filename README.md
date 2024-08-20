@@ -34,14 +34,27 @@ import { Rainify } from 'Rainify'
 const App = () => {
   return (
     <div>
-      <Rainify
-        intensity={0.5}
-        speed={3}
-        wind={0}
-        color='rgba(255, 255, 255, 0.8)'
-        thickness={2}
-        isRaining
+     import { Rainify } from 'Rainify';
+
+const App = () => {
+  return (
+     <Rainify
+        isRaining={isRaining}
+        intensity={1000}
+        color='rgba(255, 255, 255, 0.5)'
+        zIndex={0}
+        speed={0.1}
+        wind={10}
+        thickness={1}
+        splashColor='rgba(255, 255, 255, 0.5)'
+        splashDuration={6}
       />
+    </div>
+  );
+};
+
+export default App;
+
     </div>
   )
 }
@@ -53,26 +66,32 @@ export default App
 
 #### Component Properties
 
-| Prop      | Type    | Default                      | Description                                                                |
-| --------- | ------- | ---------------------------- | -------------------------------------------------------------------------- |
-| intensity | number  | `50`                         | Controls the intensity of the rain.                                        |
-| speed     | number  | `1`                          | Sets the speed of the raindrops.                                           |
-| wind      | number  | `0`                          | Defines the wind direction.                                                |
-| color     | string  | `"rgba(128, 128, 128, 0.5)"` | Specifies the color of the raindrops. Example: "rgba(255, 255, 255, 0.8)". |
-| thickness | number  | `1`                          | Defines the thickness of the raindrops.                                    |
-| isRaining | boolean | `true`                       | Enables or disables the rain effect.                                       |
-| className | string  | `''`                         | Applies a custom CSS class to the canvas element                           |
+| Prop           | Type    | Default                    | Description                                                                |
+| -------------- | ------- | -------------------------- | -------------------------------------------------------------------------- |
+| intensity      | number  | `50`                       | Controls the intensity of the rain.                                        |
+| speed          | number  | `1`                        | Sets the speed of the raindrops.                                           |
+| wind           | number  | `0`                        | Defines the wind direction.                                                |
+| color          | string  | `rgba(255, 255, 255, 0.5)` | Specifies the color of the raindrops. Example: "rgba(255, 255, 255, 0.5)". |
+| thickness      | number  | `1`                        | Defines the thickness of the raindrops.                                    |
+| isRaining      | boolean | `true`                     | Enables or disables the rain effect.                                       |
+| className      | string  | `''`                       | Applies a custom CSS class to the canvas element                           |
+| zIndex         | number  | 0                          | Controls the z-index of the canvas to manage stacking order.               |
+| splashColor    | string  | `rgba(255, 255, 255, 0.5)` | Defines the color of the splash effect when raindrops hit the ground.      |
+| splashDuration | number  | 60                         | Sets the duration of the splash effect before it fades out.                |
 
 ### Configuration Example
 
 ```tsx
 <Rainify
-  intensity={0.7}
-  speed={5}
-  wind={0}
-  color='rgba(0, 0, 255, 0.6)'
-  thickness={3}
-  isRaining
+  isRaining={isRaining}
+  intensity={1000}
+  color='rgba(255, 255, 255, 0.5)'
+  zIndex={0}
+  speed={0.1}
+  wind={10}
+  thickness={1}
+  splashColor='rgba(255, 255, 255, 0.5)'
+  splashDuration={6}
   className='my-custom-class'
 />
 ```
@@ -86,8 +105,6 @@ If you want to contribute to the project, feel free to open issues and pull requ
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ### Contact
-
-If you have any questions or suggestions, please contact us at: thiagotnon@gmail.com.
 
 Thank you for using [Rainify](https://github.com/thiagotnon/rainify.git)! I hope you enjoy the rain effect in your projects.
 
