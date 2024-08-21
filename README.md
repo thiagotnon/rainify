@@ -33,29 +33,17 @@ import { Rainify } from 'Rainify'
 
 const App = () => {
   return (
-    <div>
-     import { Rainify } from 'Rainify';
-
-const App = () => {
-  return (
-     <Rainify
-        isRaining={isRaining}
-        intensity={1000}
-        color='rgba(255, 255, 255, 0.5)'
-        zIndex={0}
-        speed={10}
-        wind={10}
-        thickness={1}
-        splashColor='rgba(255, 255, 255, 0.5)'
-        splashDuration={6}
-      />
-    </div>
-  );
-};
-
-export default App;
-
-    </div>
+    <Rainify
+      isRaining={isRaining}
+      intensity={1000}
+      color='rgba(255, 255, 255, 0.5)'
+      zIndex={0}
+      speed={10}
+      wind={10}
+      thickness={1}
+      splashColor='rgba(255, 255, 255, 0.5)'
+      splashDuration={6}
+    />
   )
 }
 
@@ -75,9 +63,9 @@ export default App
 | thickness      | number  | `1`                        | Defines the thickness of the raindrops.                                    |
 | isRaining      | boolean | `true`                     | Enables or disables the rain effect.                                       |
 | className      | string  | `''`                       | Applies a custom CSS class to the canvas element                           |
-| zIndex         | number  | 0                          | Controls the z-index of the canvas to manage stacking order.               |
+| zIndex         | number  | `0`                        | Controls the z-index of the canvas to manage stacking order.               |
 | splashColor    | string  | `rgba(255, 255, 255, 0.5)` | Defines the color of the splash effect when raindrops hit the ground.      |
-| splashDuration | number  | 60                         | Sets the duration of the splash effect before it fades out.                |
+| splashDuration | number  | `60`                       | Sets the duration of the splash effect before it fades out.                |
 
 ### Configuration Example
 
