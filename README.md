@@ -5,11 +5,11 @@
 ## Installation
 
 ```bash
-pnpm install Rainify
+pnpm install rainify
 # or
-npm install Rainify
+npm install rainify
 # or
-yarn add Rainify
+yarn add rainify
 ```
 
 ### Usage
@@ -23,18 +23,18 @@ Example
 1. Import the Components
 
 ```tsx
-import { Rainify } from 'Rainify'
+import { Rainify } from 'rainify'
 ```
 
 2. Use the Component in Your Project
 
 ```tsx
-import { Rainify } from 'Rainify'
+import { Rainify } from 'rainify'
 
 const App = () => {
   return (
     <Rainify
-      isRaining={isRaining}
+      isRaining
       intensity={1000}
       color='rgba(255, 255, 255, 0.5)'
       zIndex={0}
